@@ -28,8 +28,7 @@ export default function Root() {
         })
     }
     function createCourse(formData) {
-        setcourses(oldCoursesArr => [...oldCoursesArr, formData])
-        console.log({ ...formData });
+        setcourses(oldCoursesArr => [...oldCoursesArr, formData])       
         axios.post(`https://sheet.best/api/sheets/77f1e5ea-1184-4e39-b6b9-d972bc3adcb8`, {
             ...formData
         })
